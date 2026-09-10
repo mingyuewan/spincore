@@ -55,6 +55,14 @@ npm run build
 | 抽卡经济 / 实时 1v1 / 赛季手册 / 第二场地 | **未做（P0 范围外）** |
 | 强化 15 级 | **未做（公式已入库，玩法未接）** |
 
+## 部署到 Vercel
+
+仓库：https://github.com/mingyuewan/spincore
+
+1. 在 GitHub 安装 [Vercel GitHub App](https://github.com/apps/vercel)（授权 `mingyuewan/spincore`）。
+2. 打开 [Import 项目](https://vercel.com/new/import?s=https://github.com/mingyuewan/spincore)，选中该仓库后 Deploy。
+3. Framework 选 Vite；Build Command `npm run build`；Output `dist`（`vercel.json` 已写好）。
+
 ## 技术
 
 Vite + React + TypeScript + Tailwind + Matter.js

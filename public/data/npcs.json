@@ -1,0 +1,104 @@
+{
+  "fighters": [
+    {
+      "id": "NPC01",
+      "name": "裂羽使",
+      "playable": true,
+      "blade": "BL01",
+      "axle": "AX04",
+      "tip": "TP03",
+      "charge_ms": 780,
+      "note": "万金油对照"
+    },
+    {
+      "id": "NPC02",
+      "name": "炽牙使",
+      "playable": true,
+      "blade": "BL02",
+      "axle": "AX01",
+      "tip": "TP01",
+      "charge_ms": 1100,
+      "note": "击飞施压"
+    },
+    {
+      "id": "NPC03",
+      "name": "寒枢使",
+      "playable": true,
+      "blade": "BL03",
+      "axle": "AX03",
+      "tip": "TP04",
+      "charge_ms": 520,
+      "note": "钉子续航"
+    },
+    {
+      "id": "NPC04",
+      "name": "岩冕使",
+      "playable": false,
+      "blade": "BL04",
+      "axle": "AX05",
+      "tip": "TP03",
+      "charge_ms": 640,
+      "note": "P0 占位"
+    },
+    {
+      "id": "NPC05",
+      "name": "崩拳使",
+      "playable": false,
+      "blade": "BL05",
+      "axle": "AX01",
+      "tip": "TP06",
+      "charge_ms": 1180,
+      "note": "P0 占位"
+    },
+    {
+      "id": "NPC06",
+      "name": "涡轮使",
+      "playable": false,
+      "blade": "BL06",
+      "axle": "AX06",
+      "tip": "TP02",
+      "charge_ms": 700,
+      "note": "P0 占位"
+    },
+    {
+      "id": "NPC07",
+      "name": "苍弓使",
+      "playable": false,
+      "blade": "BL07",
+      "axle": "AX03",
+      "tip": "TP04",
+      "charge_ms": 480,
+      "note": "P0 占位"
+    },
+    {
+      "id": "NPC08",
+      "name": "夜羽使",
+      "playable": false,
+      "blade": "BL08",
+      "axle": "AX04",
+      "tip": "TP05",
+      "charge_ms": 900,
+      "note": "P0 占位"
+    },
+    {
+      "id": "NPC09",
+      "name": "裂羽影",
+      "playable": false,
+      "blade": "BL01",
+      "axle": "AX02",
+      "tip": "TP05",
+      "charge_ms": 800,
+      "note": "P0 占位"
+    },
+    {
+      "id": "NPC10",
+      "name": "炽牙影",
+      "playable": false,
+      "blade": "BL02",
+      "axle": "AX06",
+      "tip": "TP06",
+      "charge_ms": 1000,
+      "note": "P0 占位"
+    }
+  ]
+}

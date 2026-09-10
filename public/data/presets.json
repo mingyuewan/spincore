@@ -1,0 +1,34 @@
+{
+  "starters": [
+    {
+      "id": "PS01",
+      "name": "击飞流",
+      "blade": "BL05",
+      "axle": "AX01",
+      "tip": "TP01",
+      "goal": "xtreme"
+    },
+    {
+      "id": "PS02",
+      "name": "钉子流",
+      "blade": "BL04",
+      "axle": "AX05",
+      "tip": "TP04",
+      "goal": "spin"
+    },
+    {
+      "id": "PS03",
+      "name": "万金油",
+      "blade": "BL01",
+      "axle": "AX04",
+      "tip": "TP03",
+      "goal": "flex"
+    }
+  ],
+  "base_sets": [
+    { "ref": "烈风天翼", "game": "裂羽", "impact": 6, "stamina": 6, "defense": 6, "burst": 6 },
+    { "ref": "黄金火焰", "game": "炽牙", "impact": 8, "stamina": 4, "defense": 4, "burst": 5 },
+    { "ref": "青蓝冰伞", "game": "寒枢", "impact": 5, "stamina": 9, "defense": 5, "burst": 5 },
+    { "ref": "极地金盾", "game": "岩冕", "impact": 4, "stamina": 5, "defense": 9, "burst": 7 }
+  ]
+}

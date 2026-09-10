@@ -1,0 +1,14 @@
+{
+  "stats": {
+    "impact": "blade*0.55 + axle*0.15 + tip*0.30 + axle.impact_mod + tip.impact_mod",
+    "stamina": "blade*0.20 + axle*0.25 + tip*0.55 + axle.stamina_mod + tip.stamina_mod",
+    "defense": "blade*0.25 + guard*0.40 + tip*0.35 + axle.defense_mod",
+    "burst": "cover*0.20 + guard*0.50 + axle*0.30 + axle.burst_mod"
+  },
+  "type_triangle": ["attack>stamina", "stamina>defense", "defense>attack"],
+  "type_modifier": 0.1,
+  "score": { "xtreme": 3, "over": 2, "burst": 2, "spin": 1 },
+  "win_points": 4,
+  "enhance_max": 15,
+  "enhance_per_level": 0.15
+}

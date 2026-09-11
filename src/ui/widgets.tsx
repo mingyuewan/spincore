@@ -2,11 +2,12 @@ import type { ComputedStats, PartType, Rarity } from '../types'
 import { RARITY_TONE, TYPE_LABEL } from '../game/stats'
 
 export function StatBars({ stats }: { stats: ComputedStats }) {
+  const cap = Math.max(12, Math.ceil(Math.max(stats.impact, stats.stamina, stats.defense, stats.burst, 12)))
   const rows: { k: string; v: number; cap: number }[] = [
-    { k: '冲击', v: stats.impact, cap: 12 },
-    { k: '持久', v: stats.stamina, cap: 12 },
-    { k: '防御', v: stats.defense, cap: 12 },
-    { k: '抗爆', v: stats.burst, cap: 12 },
+    { k: '冲击', v: stats.impact, cap },
+    { k: '持久', v: stats.stamina, cap },
+    { k: '防御', v: stats.defense, cap },
+    { k: '抗爆', v: stats.burst, cap },
   ]
   const motion: { k: string; v: number; cap: number }[] = [
     { k: '乱走', v: stats.wander, cap: 10 },

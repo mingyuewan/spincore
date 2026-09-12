@@ -107,12 +107,19 @@ export interface KitIds {
   tip: string
 }
 
+export interface EnhanceLevels {
+  blade: number
+  axle: number
+  tip: number
+}
+
 export interface ResolvedKit {
   blade: Blade
   axle: Axle
   tip: Tip
   cover: number
   guard: number
+  enhance: EnhanceLevels
 }
 
 export interface ComputedStats extends CoreStats {
@@ -135,6 +142,8 @@ export interface ReplayTape {
   seed: number
   p1: KitIds
   p2: KitIds
+  p1Enhance?: EnhanceLevels
+  p2Enhance?: EnhanceLevels
   launch1: LaunchParams
   launch2: LaunchParams
 }

@@ -62,6 +62,8 @@ export class FightSession {
       seed,
       p1: ids1,
       p2: ids2,
+      p1Enhance: kit1.enhance,
+      p2Enhance: kit2.enhance,
       launch1: { chargeMs: 800, overshoot: false },
       launch2: { chargeMs: 800, overshoot: false },
     }

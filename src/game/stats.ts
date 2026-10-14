@@ -1,6 +1,7 @@
 import type {
   ComputedStats,
   CoreStats,
+  EnhanceLevels,
   FormulasDb,
   KitIds,
   PartsDb,
@@ -8,6 +9,7 @@ import type {
   ResolvedKit,
   TipMotion,
 } from '../types'
+import { enhanceCore } from './enhance'
 
 export const COVER_DEFAULT = 5
 export const GUARD_DEFAULT = 5
@@ -38,7 +40,9 @@ const BEATS: Record<string, PartType> = {
   defense: 'attack',
 }
 
-export function resolveKit(parts: PartsDb, ids: KitIds): ResolvedKit {
+const ZERO_ENHANCE: EnhanceLevels = { blade: 0, axle: 0, tip: 0 }
+
+export function resolveKit(parts: PartsDb, ids: KitIds, enhance: EnhanceLevels = ZERO_ENHANCE, formulas?: FormulasDb): ResolvedKit {
   const blade = parts.blades.find((p) => p.id === ids.blade)
   const axle = parts.axles.find((p) => p.id === ids.axle)
   const tip = parts.tips.find((p) => p.id === ids.tip)
@@ -46,11 +50,12 @@ export function resolveKit(parts: PartsDb, ids: KitIds): ResolvedKit {
     throw new Error(`零件缺失：${ids.blade}/${ids.axle}/${ids.tip}`)
   }
   return {
-    blade,
-    axle,
-    tip,
+    blade: formulas ? enhanceCore(blade, enhance.blade, formulas) : blade,
+    axle: formulas ? enhanceCore(axle, enhance.axle, formulas) : axle,
+    tip: formulas ? enhanceCore(tip, enhance.tip, formulas) : tip,
     cover: parts.cover_default ?? COVER_DEFAULT,
     guard: parts.guard_default ?? GUARD_DEFAULT,
+    enhance,
   }
 }
 
